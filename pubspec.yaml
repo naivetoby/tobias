@@ -39,8 +39,8 @@ flutter:
       android:
         package: com.jarvan.tobias
         pluginClass: TobiasPlugin
-      ios:
-        pluginClass: TobiasPlugin
+#      ios:
+#        pluginClass: TobiasPlugin
 #      web:
 #        pluginClass: TobiasWeb
 #        fileName: tobias_web.dart
