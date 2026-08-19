@@ -1,18 +1,18 @@
 #-dontshrink
 -dontpreverify
--dontoptimize
+#-dontoptimize
 -dontusemixedcaseclassnames
 
--flattenpackagehierarchy
--allowaccessmodification
--printmapping map.txt
+#-flattenpackagehierarchy
+#-allowaccessmodification
+#-printmapping map.txt
 
 -optimizationpasses 7
 -verbose
 -keepattributes Exceptions,InnerClasses
 -dontskipnonpubliclibraryclasses
 -dontskipnonpubliclibraryclassmembers
--ignorewarnings
+#-ignorewarnings
 
 -keep public class * extends android.app.Activity
 -keep public class * extends android.app.Application
@@ -70,7 +70,7 @@
 
 # adding this in to preserve line numbers so that the stack traces
 # can be remapped
--renamesourcefileattribute SourceFile
+#-renamesourcefileattribute SourceFile
 -keepattributes SourceFile,LineNumberTable
 
 ## Kotlin
